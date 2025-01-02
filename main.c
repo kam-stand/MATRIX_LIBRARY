@@ -8,6 +8,7 @@ int main() {
     MATRIX *mat1 = Create_matrix(3, 3);
     MATRIX *mat2 = Create_matrix(3, 3);
 
+    MATRIX *mat3 = Create_matrix(2, 2);
     // Initialize matrix1 with some values
     mat1->Matrix[0][0] = 1;
     mat1->Matrix[0][1] = 2;

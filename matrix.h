@@ -144,4 +144,30 @@ void Scalar_mulitplication(MATRIX *mat, double scalar);
  */
 void Print_matrix(MATRIX *mat);
 
+
+
+/**
+ * @brief Caculates the sume of two matrices 
+ * 
+ * This function takes two matrices as input and return the computes sum as a matrix
+ * @param mat1 
+ * @param mat2 
+ * @return MATRIX* 
+ */
+MATRIX* Add_matrix(MATRIX *mat1, MATRIX *mat2);
+
+/**
+ * @brief Calculates the difference between two matrices
+ *
+ * This functions takes an input of two matrices where the result is the difference of mat1-mat2 
+ * @param mat1 
+ * @param mat2 
+ * @return MATRIX* 
+ */
+
+
+MATRIX* Sub_matrx(MATRIX *mat1, MATRIX* mat2);
+
+
+
 #endif // MATRIX_H

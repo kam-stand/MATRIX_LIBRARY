@@ -225,3 +225,45 @@ MATRIX* Inverse_matrix(MATRIX *mat) {
 
     return ret;
 }
+
+
+MATRIX* Add_matrix(MATRIX *mat1, MATRIX *mat2){
+
+    if (mat1->rows != mat2->rows || mat1->columns != mat2->columns) {
+        printf("The matrices do not have the same dimension");
+        return NULL;
+    }
+
+    MATRIX *ret = Create_matrix(mat1->rows, mat1->columns);
+    for (int i =0; i<mat1->rows; i++) {
+        for(int j = 0; j<mat1->columns; j++){
+            ret->Matrix[i][j] = mat1->Matrix[i][j] + mat2->Matrix[i][j]; 
+
+        }
+    }
+
+
+
+    return ret;
+}
+
+MATRIX* Sub_matrx(MATRIX *mat1, MATRIX *mat2){
+
+    if (mat1->rows != mat2->rows || mat1->columns != mat2->columns) {
+        printf("The matrices do not have the same dimension");
+        return NULL;
+    }
+
+    MATRIX *ret = Create_matrix(mat1->rows, mat1->columns);
+    for (int i =0; i<mat1->rows; i++) {
+        for(int j = 0; j<mat1->columns; j++){
+            ret->Matrix[i][j] = mat1->Matrix[i][j] - mat2->Matrix[i][j]; 
+
+        }
+    }
+
+
+
+    return ret;
+
+}
